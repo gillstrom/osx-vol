@@ -14,7 +14,7 @@ exports.get = function (cb) {
 			return;
 		}
 
-		cb(null, toDecimal(parseInt(res[0].split(':')[1])));
+		cb(null, toDecimal(parseInt(res[0].split(':')[1], 10)));
 	});
 };
 
