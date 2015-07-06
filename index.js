@@ -29,6 +29,7 @@ exports.set = function (level, cb) {
 
 	if (level < 0 || level > 1) {
 		cb(new Error('Expected a level between 0 and 1'));
+		return;
 	}
 
 	applescript.execString('set volume output volume ' + toPercent(level), function (err, res) {
