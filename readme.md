@@ -58,6 +58,11 @@ A number between `0` and `1.
 Type: `function`
 
 
+## CLI
+
+See the [vol](https://github.com/gillstrom/vol) CLI.
+
+
 ## License
 
 MIT © [Andreas Gillström](http://github.com/gillstrom)
