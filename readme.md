@@ -21,7 +21,7 @@ osxVol.get(function (err, level) {
 });
 
 osxVol.set(0.65, function (err) {
-	console.log('Changed volume to 65%');
+	console.log('Changed volume level to 65%');
 });
 ```
 
@@ -51,7 +51,7 @@ Set volume level.
 *Required*
 Type: `number`
 
-A number between `0` and `1.
+A number between `0` and `1`.
 
 #### callback(err)
   

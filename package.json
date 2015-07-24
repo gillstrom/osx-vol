@@ -20,6 +20,7 @@
   ],
   "keywords": [
     "applescript",
+    "level",
     "mac",
     "osx",
     "sound",
@@ -28,6 +29,7 @@
   ],
   "dependencies": {
     "applescript": "^1.0.0",
+    "in-range": "^1.0.0",
     "to-decimal": "^2.0.0",
     "to-percent": "^1.0.2"
   },

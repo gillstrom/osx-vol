@@ -1,5 +1,6 @@
 'use strict';
 var applescript = require('applescript');
+var inRange = require('in-range');
 var toPercent = require('to-percent');
 var toDecimal = require('to-decimal');
 
@@ -27,7 +28,7 @@ exports.set = function (level, cb) {
 		throw new TypeError('Expected a number');
 	}
 
-	if (level < 0 || level > 1) {
+	if (!inRange(level, 1)) {
 		cb(new Error('Expected a level between 0 and 1'));
 		return;
 	}
