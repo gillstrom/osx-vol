@@ -33,7 +33,7 @@ exports.set = function (level, cb) {
 		return;
 	}
 
-	applescript.execString('set volume output volume ' + toPercent(level), function (err, res) {
+	applescript.execString('set volume output volume ' + toPercent(level), function (err) {
 		if (err) {
 			cb(err);
 			return;
