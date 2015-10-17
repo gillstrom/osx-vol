@@ -1,6 +1,6 @@
 {
   "name": "osx-vol",
-  "version": "1.0.5",
+  "version": "2.0.0",
   "description": "Get and set volume in OS X systems.",
   "license": "MIT",
   "repository": "gillstrom/osx-vol",
