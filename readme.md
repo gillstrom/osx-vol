@@ -1,4 +1,4 @@
-# osx-vol [![Build Status](https://travis-ci.org/gillstrom/osx-vol.svg?branch=master)](https://travis-ci.org/gillstrom/osx-vol)
+# osx-vol
 
 > Get and set volume in OS X systems.
 
