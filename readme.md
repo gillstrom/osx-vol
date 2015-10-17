@@ -13,14 +13,14 @@ $ npm install --save osx-vol
 ## Usage
 
 ```js
-var osxVol = require('osx-vol');
+const osxVol = require('osx-vol');
 
-osxVol.get(function (err, level) {
+osxVol.get().then(level => {
 	console.log(level);
 	//=> 0.45
 });
 
-osxVol.set(0.65, function (err) {
+osxVol.set(0.65).then(() => {
 	console.log('Changed volume level to 65%');
 });
 ```
@@ -28,23 +28,13 @@ osxVol.set(0.65, function (err) {
 
 ## API
 
-### .get(callback)
+### .get()
 
-Get volume level.
+Returns a promise that resolves to current volume level.
 
-#### callback(err, level)
-  
-Type: `function`
+### .set(level)
 
-##### level
-
-Type: `number`
-
-Current volume level.
-
-### .set(level, callback)
-
-Set volume level.
+Returns a promise that resolves nothing.
 
 #### level
 
@@ -52,10 +42,6 @@ Set volume level.
 Type: `number`
 
 A number between `0` and `1`.
-
-#### callback(err)
-  
-Type: `function`
 
 
 ## CLI
